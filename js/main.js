@@ -9,10 +9,11 @@ let isDragging = false,
     currentIndex = 0
 
 slides.forEach((slide, index) => {  
+    /*
+    // Evitar arrastrar la transparencia de la imagen
     const slideImage = slide.querySelector('img'); 
     slideImage.addEventListener("dragstart",  (e) =>  e.preventDefault());
-    
-    
+    */
     // touch events // 'touchstart'> cuando pones el dedo en la pantalla
     slide.addEventListener('touchstart', touchStart(index))
     slide.addEventListener('touchend', touchEnd)
